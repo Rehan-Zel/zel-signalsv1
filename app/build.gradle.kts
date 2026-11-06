@@ -20,5 +20,5 @@ android {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.24")
+    add("implementation", "org.jetbrains.kotlin:kotlin-stdlib:1.9.24")
 }
