@@ -11,15 +11,11 @@ android {
         versionName = "1.0"
     }
 
-    packaging {
-        resources {
-            excludes.addAll(listOf(
-                "META-INF/versions/9/OSGI-INF/MANIFEST.MF",
-                "META-INF/DEPENDENCIES",
-                "META-INF/LICENSE",
-                "META-INF/NOTICE"
-            ))
-        }
+    packagingOptions {
+        exclude("META-INF/versions/9/OSGI-INF/MANIFEST.MF")
+        exclude("META-INF/DEPENDENCIES")
+        exclude("META-INF/LICENSE")
+        exclude("META-INF/NOTICE")
     }
 }
 
